@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Video Player</title>
+    <style>
+      /* CSS styles for the video player and thumbnails */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      #player {
+        width: 640px;
+        height: 360px;
+        margin-bottom: 20px;
+      }
+      #thumbnails {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .thumbnail {
+        width: 120px;
+        height: 90px;
+        margin-bottom: 10px;
+        background-size: cover;
+        cursor: pointer;
+      }
+      .thumbnail:hover {
+        opacity: 0.7;
+      }
+      #title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      #channel {
+        font-size: 14px;
+        color: #606060;
+        margin-bottom: 10px;
+      }
+      #description {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="player">
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/V74l_zS1x8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div id="thumbnails">
+      <a href="#" class="thumbnail" style="background-image:url(https://img.youtube.com/vi/V74l_zS1x8E/0.jpg)"></a>
+      <a href="#" class="thumbnail" style="background-image:url(https://img.youtube.com/vi/V74l_zS1x8E/1.jpg)"></a>
+      <a href="#" class="thumbnail" style="background-image:url(https://img.youtube.com/vi/V74l_zS1x8E/2.jpg)"></a>
+      <a href="#" class="thumbnail" style="background-image:url(https://img.youtube.com/vi/V74l_zS1x8E/3.jpg)"></a>
+      <a href="#" class="thumbnail" style="background-image:url(https://img.youtube.com/vi/V74l_zS1x8E/4.jpg)"></a>
+    </div>
+    <h1 id="title">Eiffel 65 - Blue (Da Ba Dee)</h1>
+    <div id="channel">Eiffel 65</div>
+    <div id="description">"Blue (Da Ba Dee)" is a song by Italian music group Eiffel 65. It was released in 1998 as the lead single from their debut album "Europop".</div>
+  </body>
+</html>
